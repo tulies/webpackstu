@@ -554,7 +554,7 @@ var insertInto;
 
 
 
-var options = {"hmr":true}
+var options = {"singleton":true,"hmr":true}
 
 options.transform = transform
 options.insertInto = undefined;
@@ -599,7 +599,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "html{\r\n    background: red;\r\n}", ""]);
+exports.push([module.i, "html{\n    background: red;\n}", ""]);
 
 // exports
 
@@ -713,7 +713,7 @@ var insertInto;
 
 
 
-var options = {"hmr":true}
+var options = {"singleton":true,"hmr":true}
 
 options.transform = transform
 options.insertInto = undefined;
@@ -758,7 +758,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "body{\r\n    font-size: 30px;\r\n}", ""]);
+exports.push([module.i, "body{\n    font-size: 30px;\n}\n\n.box{\n    font-size: 30px;\n}", ""]);
 
 // exports
 

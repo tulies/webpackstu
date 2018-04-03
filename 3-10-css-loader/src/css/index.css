@@ -1,0 +1,10 @@
+body{
+    font-size: 30px;
+}
+
+.box{
+    composes: bigbox from './comm.css';  /*  这个位置很重要。 放在上面就会先加载， */
+    height:200px;
+    width: 200px;
+    background-color: #efefef ;
+}
