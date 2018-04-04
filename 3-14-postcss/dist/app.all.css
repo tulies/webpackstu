@@ -1,0 +1,9 @@
+html{
+    background: red;
+}body{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
