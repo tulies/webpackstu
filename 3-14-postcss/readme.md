@@ -75,7 +75,7 @@ module.exports = {
 - cssnext 让我们可以使用未来的css语法 如`css variables`、`custom selectors`、`calc()`；  
   cssnext中已经包含了autoprefixer
   
-> 一旦涉及到浏览器兼容性的问题，我们就一会会有个针对性，比如语法解析是要针对所需要浏览器版本进行控制。其实就是用到Browserslist。 
+> 一旦涉及到浏览器兼容性的问题，我们就一定会有个针对性，比如语法解析是要针对所需要浏览器版本进行控制。其实就是用到Browserslist。 
 
 webpack中es-load、postcss等loader都需要通过browserlist来进行控制，那么这时候我们就可以将这些配置统一放在一个地方进行配置。
 
