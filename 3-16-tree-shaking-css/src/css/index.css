@@ -1,0 +1,17 @@
+html{
+    background: #7e3a6f;
+}
+.indexbody{
+    font-size: 100px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.box1{
+    background: #7e3a6f;
+}
+.box2{
+    display: none;
+}
