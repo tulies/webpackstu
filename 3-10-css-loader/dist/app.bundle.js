@@ -536,11 +536,11 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, ".src-css-comm_bigbox--u3pJl{\n    border:4px solid black\n}", ""]);
+exports.push([module.i, ".src-css-comm_bigbox--4ezn3{\r\n    border:4px solid black\r\n}", ""]);
 
 // exports
 exports.locals = {
-	"bigbox": "src-css-comm_bigbox--u3pJl"
+	"bigbox": "src-css-comm_bigbox--4ezn3"
 };
 
 /***/ }),
@@ -556,6 +556,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+console.log(__WEBPACK_IMPORTED_MODULE_1__css_index_css___default.a);
 var styledom = document.getElementById('styledom');
 styledom.innerHTML = '<div class="'+__WEBPACK_IMPORTED_MODULE_1__css_index_css___default.a.box+'"></div>'
 
@@ -618,7 +619,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "html{\n    background: red;\n}", ""]);
+exports.push([module.i, "html{\r\n    background: red;\r\n}", ""]);
 
 // exports
 
@@ -777,11 +778,11 @@ exports = module.exports = __webpack_require__(0)(false);
 exports.i(__webpack_require__(2), undefined);
 
 // module
-exports.push([module.i, "body{\n    font-size: 30px;\n}\n\n.src-css-index_box--2cQdM{  /*  这个位置很重要。 放在上面就会先加载， */\n    height:200px;\n    width: 200px;\n    background-color: #efefef ;\n}", ""]);
+exports.push([module.i, "body{\r\n    font-size: 30px;\r\n}\r\n\r\n.src-css-index_box--2iFbD{  /*  这个位置很重要。 放在上面就会先加载， */\r\n    height:200px;\r\n    width: 200px;\r\n    background-color: #efefef ;\r\n}", ""]);
 
 // exports
 exports.locals = {
-	"box": "src-css-index_box--2cQdM " + __webpack_require__(2).locals["bigbox"] + ""
+	"box": "src-css-index_box--2iFbD " + __webpack_require__(2).locals["bigbox"] + ""
 };
 
 /***/ })

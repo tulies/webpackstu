@@ -1,17 +1,18 @@
 html{
     background: #7e3a6f;
 }
-.indexbody{
+#indexbody{
     font-size: 100px;
 }
-.box{
+.divbox{
     width: 100px;
     height: 100px;
 }
-
-.box1{
-    background: #7e3a6f;
+.box3{
+    width: 140px;
+    height: 100px;
 }
-.box2{
-    display: none;
+.boxx3{
+    width: 200px;
+    height: 100px;
 }

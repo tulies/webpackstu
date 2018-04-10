@@ -18,9 +18,6 @@ module.exports = {
     //     ]
     // },
     plugins:[
-        new Purifycss({
-            paths: glob.sync([]);
-        });
         new Webpack.optimize.UglifyJsPlugin()
     ]
 };

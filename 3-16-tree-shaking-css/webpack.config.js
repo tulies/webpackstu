@@ -20,13 +20,14 @@ module.exports = {
                 test: /\.css$/,
                 use: ExtractTextWebpackPlugin.extract({
                     fallback:{
-                        loader:'style-loader'
+                        loader:'style-loader',
+                        options: { singleton: true }
                     },
                     use: [
                         {
-                            loader: 'css-loader'
+                            loader: 'css-loader',
+                            // options: { modules: true}
                         }
-                        //如果用到了less、sass，那么loader也写在这
                     ]
                 })
             }
@@ -37,12 +38,16 @@ module.exports = {
             filename: '[name].all.css',
             allChunks: false, // 默认为false。给插件指定一个提取范围 如果为false，只会提取初始化的css，非异步加载的
         }),
+        // Make sure this is after ExtractTextPlugin!
         // CSS Tree shaking  这个要放在ExtractTextWebpackPlugin的下面
         new Purifycss({
             paths: glob.sync([
-                path.join(__dirname, './*.html'),
-                path.join(__dirname, './src/*.js'),
+                // Give paths to parse for rules. These should be absolute!
+                path.join(__dirname, './*.html'), //处理html模板中用到的css
+                path.join(__dirname, './src/*.js'), //处理src目录下的所有js中引用的css
             ])
-        })
+        }),
+        new Webpack.optimize.UglifyJsPlugin()
+
     ]
 };
