@@ -7,7 +7,8 @@ module.exports = {
 
     output: {
         filename: '[name].bundle.js',
-        path:path.resolve(__dirname, 'dist')
+        path:path.resolve(__dirname, 'dist'),
+        publicPath: 'dist/'
     },
 
     module: {
@@ -27,16 +28,33 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|jpeg|gif)$/,
+                // use: {
+                //     loader: 'file-loader',
+                //     options: {
+                //         publicPath:'../assets/imgs',
+                //         outputPath:'assets/imgs',
+                //         // useRelativePath: true,
+                //         // context:'/'
+                //     }
+                // },
                 use: {
-                    loader: 'file-loader'
-                }
+                    loader: 'url-loader',
+                    options: {
+                        limit: 8000,
+                        publicPath:'../assets/imgs',
+                        outputPath:'assets/imgs',
+                        // useRelativePath: true,
+                        // context:'/'
+                    }
+                },
+
             }
         ]
     },
 
     plugins: [
         new ExtractTextWebpackPlugin({
-            filename: '[name].all.css',
+            filename: 'css/[name].all.css',
             allChunks: false, // 默认为false。给插件指定一个提取范围 如果为false，只会提取初始化的css，非异步加载的
         })
     ]

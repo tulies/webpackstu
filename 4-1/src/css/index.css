@@ -8,6 +8,7 @@
     width: 100px;
     height: 100px;
     float: left;
+    background-size: cover;
 }
 .box >div.img1{
     background-image: url("../assets/imgs/1.png");
