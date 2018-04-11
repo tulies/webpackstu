@@ -50,7 +50,7 @@ module.exports = {
                                 plugins: [
                                     // 自动加浏览器前缀
                                     // require('autoprefixer')(),
-                                    require('postcss-cssnext')()
+                                    require('postcss-cssnext')()  //postcss-cssnext中包含了autoprefixer的功能
                                 ]
                             }
                         }

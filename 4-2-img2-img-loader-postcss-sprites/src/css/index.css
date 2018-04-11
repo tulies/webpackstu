@@ -1,0 +1,28 @@
+.box{
+    width: 600px;
+    height: 400px;
+    border: 1px solid #7e3a6f;
+}
+
+.box >div{
+    width: 128px;
+    height: 128px;
+    float: left;
+    /*background-size: cover;*/
+}
+.box >div.img1{
+    background-image: url("../assets/imgs/1.png");
+}
+.box >div.img2{
+    background-image: url("../assets/imgs/2.png");
+}
+.box >div.img3{
+    background-image: url("../assets/imgs/3.png");
+}
+.box >div.img4 {
+    background-image: url("../assets/imgs/4.png");
+}
+
+.test{
+    display: flex;
+}
