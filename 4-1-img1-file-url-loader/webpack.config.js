@@ -27,26 +27,20 @@ module.exports = {
                 })
             },
             {
-                test: /\.(png|jpg|jpeg|gif)$/,
-                // use: {
-                //     loader: 'file-loader',
-                //     options: {
-                //         publicPath:'../assets/imgs',
-                //         outputPath:'assets/imgs',
-                //         // useRelativePath: true,
-                //         // context:'/'
-                //     }
-                // },
-                use: {
-                    loader: 'url-loader',
-                    options: {
-                        limit: 8000,
-                        publicPath:'../assets/imgs',
-                        outputPath:'assets/imgs',
-                        // useRelativePath: true,
-                        // context:'/'
+                test: /\.(jpe?g|png|gif|svg)$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8000,
+                            publicPath:'../assets/imgs',
+                            outputPath:'assets/imgs',
+                            // useRelativePath: true,
+                            // context:'/'
+                        }
                     }
-                },
+
+                ]
 
             }
         ]
